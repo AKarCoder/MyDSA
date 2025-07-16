@@ -1,0 +1,14 @@
+{
+  "name": "C++ Codespace",
+  "image": "mcr.microsoft.com/devcontainers/cpp:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools", // C/C++ IntelliSense, debugging, and code Browse
+        "ms-vscode.cmake-tools", // Useful if you plan to use CMake for projects
+        "formulahendry.code-runner" // For quickly running single files
+      ]
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y build-essential" // Ensures basic build tools are there
+}
